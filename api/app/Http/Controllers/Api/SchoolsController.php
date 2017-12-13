@@ -11,9 +11,8 @@ class SchoolsController extends Controller
 
 
     /**
-     * Gets all categories and returns them.
+     * Gets all shools and returns them.
      *
-     * @param Request
      * @return Resonse
      */
     public function getAll()

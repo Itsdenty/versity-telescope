@@ -9,7 +9,9 @@ This is the categories for each school that a user can rate
 Method: GET
 Response: [
   Categories
-]```
+]
+```
+
 
 
 * Schools
@@ -20,4 +22,5 @@ Response: [
 Method: GET
 Response: [
   Schools
-]```
+]
+```

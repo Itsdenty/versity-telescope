@@ -13,7 +13,6 @@ class CategoriesController extends Controller
     /**
      * Gets all categories and returns them.
      *
-     * @param Request
      * @return Resonse
      */
     public function getAll()
