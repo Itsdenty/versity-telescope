@@ -1,0 +1,13 @@
+{"angular-frontend" : {
+    "homepage model": "create data models for the homepage",
+    "homepage data" : "create stores for homepage data",
+    "homepage actions" : "create neccessary actions for homepage data",
+    "homepage reducers" : "create reducers for homepage actions",
+    "homepage effects" : "create effects for homepage actions",
+    "homepage services" : "create service functions for homepage api interactions",
+    "homepage ui" : "create a static copy of homepage view",
+    "setup router" : "setup router for homepage",
+    "connect homepage flow" : "connect homepage flows and make it dynamic",
+    "homepage review" : "review homepage prototype and debug it"
+}
+}

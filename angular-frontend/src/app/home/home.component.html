@@ -1,3 +1,8 @@
-<p>
-  home works!
-</p>
+<!-- <p>
+  home works!</p> -->
+  <div *ngIf="categories$">
+    <div *ngFor="let category of categories$">
+      <p>{{category.name}}</p>
+    </div>
+  </div>
+  <p *ngIf="!categories$">coooooooooooool</p>

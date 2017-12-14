@@ -23,14 +23,14 @@ import {
    * notation packages up all of the exports into a single object.
    */
   
-  import * as fromHome from '../home/reducer';
+  import * as fromNotification from '../core/reducers/notification';
   
   /**
    * As mentioned, we treat each reducer like a table in a database. This means
    * our top level state interface is just a map of keys to inner state types.
    */
   export interface State {
-    layout: fromHome.State;
+    notification: fromNotification.State;
   }
   
   /**
@@ -39,7 +39,7 @@ import {
    * and the current or initial state and return a new immutable state.
    */
   export const reducers: ActionReducerMap<State> = {
-    layout: fromHome.reducer,
+    notification: fromNotification.reducer,
   };
   
   // console.log all actions
@@ -64,14 +64,14 @@ import {
   /**
    * Layout Reducers
    */
-  export const getHomeState = createFeatureSelector<fromHome.State>('layout');
+  export const getNotificationState = createFeatureSelector<fromNotification.State>('layout');
   
-  export const getShowLoading = createSelector(
-    getHomeState,
-    fromHome.getShowLoading
+  export const getErrorState = createSelector(
+    getNotificationState,
+    fromNotification.getSuccessState
   );
-  export const getLocationCode = createSelector(
-    getHomeState,
-    fromHome.getLocationCode
+  export const getSuccessState = createSelector(
+    getNotificationState,
+    fromNotification.getSuccessState
   );
   
