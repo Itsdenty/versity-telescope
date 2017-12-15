@@ -20,4 +20,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::group(['namespace' => 'Api', 'prefix'=>'v1'], function(){
   Route::get('categories', 'CategoriesController@getAll');
   Route::get('schools', 'SchoolsController@getAll');
+  Route::get('home', 'SchoolsController@getHome');
 });

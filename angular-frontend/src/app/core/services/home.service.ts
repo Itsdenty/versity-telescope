@@ -7,7 +7,7 @@ import {Observable} from 'rxjs/Observable';
 
 @Injectable()
 export class HomeService {
-  private API_PATH = 'http://localhost:3333/test' ;
+  private API_PATH = 'http://localhost:8000/api/v1/home' ;
   constructor(private http: Http) {}
 
     getCollection(): Observable<any> {
